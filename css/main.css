@@ -1,0 +1,272 @@
+:root {
+  /* Colors: */
+  --blue1: #8ecae6;
+  --blue2: #219ebc;
+  --blue3: #023047;
+  --orange: #fb8500;
+  --orange2: #ffb703;
+  --white: #ffffff;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./fonts/Segoe\ UI.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Segoe UI Bold";
+  src: url("./fonts/Segoe\ UI\ Bold.ttf") format("truetype");
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  padding: 50px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (width >= 960px) {
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@media (width >= 1260px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (width >= 960px) {
+  header {
+    justify-content: flex-start;
+  }
+}
+
+.home {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+@media (width >= 960px) {
+  .home {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    text-align: left;
+    gap: 0;
+    padding: 0;
+  }
+}
+
+.illustration {
+  margin: 40px 0;
+  width: 120%;
+  max-width: 400px;
+}
+
+@media (width >= 960px) {
+  .illustration {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+@media (width >= 1260px) {
+  .illustration {
+    max-width: 870px;
+    margin-right: -40px;
+  }
+}
+
+section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (width >= 960px) {
+  section {
+    flex-direction: row;
+    gap: 4%;
+  }
+}
+
+.title {
+  letter-spacing: -0.52px;
+  color: var(--orange);
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+@media (width >= 960px) {
+  .title {
+    font-size: 30px;
+    text-align: left;
+  }
+}
+
+@media (width >= 1260px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+.title strong {
+  display: block;
+}
+
+@media (width >= 960px) {
+  .title strong {
+    display: initial;
+  }
+
+  .title span {
+    display: block;
+  }
+}
+
+.btn {
+  border: none;
+  border-radius: 20px;
+  padding: 20px 35px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: var(--orange2);
+  color: var(--white);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.featured-cards {
+  box-shadow: 0px 0px 99px #00000029;
+  border-radius: 40px;
+  padding: 30px;
+  margin: 70px 0;
+  max-width: 346px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+}
+
+.featured-cards h2 {
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--orange);
+  text-align: center;
+  transition: all ease-in 0.2;
+}
+
+.featured-cards:hover h2 {
+  color: var(--orange2);
+}
+
+.card {
+  height: 286px;
+  width: 100%;
+  max-width: 1000px;
+  background-color: var(--orange2);
+  border-radius: 15px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+  padding: 25px;
+  margin-top: 120px;
+}
+
+.card p {
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+@media (width >= 960px) {
+  .card {
+    font-size: 36px;
+    height: 360px;
+    max-width: 100%;
+  }
+
+  .card p {
+    max-width: 90%;
+    width: 100%;
+  }
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--orange);
+  color: var(--white);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+footer .contact {
+  text-align: center;
+  margin: 70px 0;
+}
+
+footer p {
+  line-height: 24px;
+  margin: 0;
+}
+
+@media (width >= 960px) {
+  footer {
+    font-size: 28px;
+    font-weight: lighter;
+    line-height: 50px;
+  }
+}
+
+footer strong {
+  margin-bottom: 40px;
+  display: block;
+}
+
+footer .rights {
+  font-size: 14px;
+}
+
+footer .logo-instagram {
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: var(--white);
+}
