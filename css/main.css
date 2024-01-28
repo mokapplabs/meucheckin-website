@@ -8,24 +8,27 @@
   --white: #ffffff;
 }
 
-@font-face {
-  font-family: "Segoe UI";
-  src: url("./fonts/Segoe\ UI.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Segoe UI Bold";
-  src: url("./fonts/Segoe\ UI\ Bold.ttf") format("truetype");
-}
-
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
-  padding: 50px 0 10px;
+  padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+header .logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+@media (width >= 960px) {
+  header .logo {
+    width: 200px;
+  }
 }
 
 @media (width >= 960px) {
@@ -83,7 +86,7 @@ header {
 
 @media (width >= 1260px) {
   .illustration {
-    max-width: 870px;
+    max-width: 850px;
     margin-right: -40px;
   }
 }
@@ -170,10 +173,11 @@ section {
 
 .featured-cards h2 {
   font-size: 18px;
+  line-height: 25px;
   font-weight: normal;
   color: var(--orange);
   text-align: center;
-  transition: all ease-in 0.2;
+  transition: all ease-in 0.2s;
 }
 
 .featured-cards:hover h2 {
@@ -210,7 +214,7 @@ section {
   }
 
   .card p {
-    max-width: 90%;
+    max-width: 70%;
     width: 100%;
   }
 }
